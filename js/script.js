@@ -281,7 +281,7 @@ listPanelGroup.forEach(listPanel => {
 
 
 
-            if (listPanel.innerText == 'Все дети') {
+             if (listPanel.innerText == 'Все дети') {
                 let df = this.parentNode.querySelectorAll('.list-un')
                 for (h = 0; h < df.length; h++) {
 
@@ -307,10 +307,14 @@ listPanelGroup.forEach(listPanel => {
                             df[h].classList.add('select');
                             let butCloseAl = document.querySelectorAll('.icon-close');
                             butCloseAl.forEach(but => {
-                                let par = df[h];
                                 but.addEventListener('click', function () {
                                     but.parentElement.parentElement.parentElement.remove();
-                                    par.classList.remove('select');
+                                    let lnNum = document.querySelectorAll('.list-un');
+                                    lnNum.forEach(ln => {
+                                        if (ln.innerText == but.parentElement.firstElementChild.nextElementSibling.innerText) {
+                                            ln.classList.remove('select');
+                                        }
+                                    })
                                 });
                             });
                         }
@@ -338,16 +342,19 @@ listPanelGroup.forEach(listPanel => {
                                 dfUn[hUn].classList.add('select');
                                 let butCloseAl = document.querySelectorAll('.icon-close');
                                 butCloseAl.forEach(but => {
-                                    let par = dfUn[hUn];
                                     but.addEventListener('click', function () {
                                         but.parentElement.parentElement.parentElement.remove();
-                                        par.classList.remove('select');
+                                        let lnNum = document.querySelectorAll('.list-un-un');
+                                        lnNum.forEach(ln => {
+                                            if (ln.innerText == but.parentElement.firstElementChild.nextElementSibling.nextElementSibling.innerText) {
+                                                ln.classList.remove('select');
+                                            }
+                                        })
                                     });
                                 });
                             }
                         }
                     }
-
 
                 }
             }
