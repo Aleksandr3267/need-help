@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Need help</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__logo">
+                <a href="#"><img src="./img/logo.svg" alt="logo"></a>
+            </div>
+            <div class="header__user">
+                <img src="./img/avatar.svg" alt="avatar">
+                <div class="user-name">
+                    Екатерина
+                </div>
+            </div>
+        </header>
+        <aside class="aside">
+            <nav class="aside__nav">
+                <ul class="menu">
+                    <li><a href="#"><img src="./img/menu.svg" alt="icon"><span>Панель управления</span> </a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main">
+            <h1 class="main__title">Создание сбора</h1>
+            <div class="main__content">
+                <div class="main__content-block">
+                    <h2 class="main__content-block-title">Информация о сборе</h2>
+                    <form class="title-collection-form">
+                        <label for="title">Название сбора</label>
+                        <input type="text" id="title">
+                    </form>
+                </div>
+
+                <div class="main__content-block">
+                    <h2 class="main__content-block-title">Целевые группы</h2>
+                    <p class="main__content-block-subtitle">Укажите, кому помогает ваша организация</p>
+                    <div class="block-groups">
+
+                    </div>
+
+                    <div class="block-select-else">
+                        <ul class="panel-groups"></ul>
+                        <div class="but-select-else"><span></span>Выбрать еще</div>
+                    </div>
+                </div>
+                <div class="main__content-line"></div>
+                <button class="but-save-and-next">сохранить и продолжить</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/script.js" async defer></script>
+</body>
+
+</html>
