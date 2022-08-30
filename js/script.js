@@ -122,7 +122,7 @@ for (var i = 0; i < countGroup; i++) {
 
     let groupUnList = groups[i].groups;
     const image = document.createElement('img');
-    image.src = '../img/arrow.svg';
+    image.src = './img/arrow.svg';
     image.alt = 'arrow';
     if (groupUnList[0]) {
         span.append(image);
@@ -174,7 +174,7 @@ for (var i = 0; i < countGroup; i++) {
         });
         let groupUnUnList = groups[i].groups[b].groups;
         const image = document.createElement('img');
-        image.src = '../img/arrow.svg';
+        image.src = './img/arrow.svg';
         image.alt = 'arrow';
         if (groupUnUnList[0]) {
             spanUn.append(image);
